@@ -1,3 +1,4 @@
+[c1,fs] = audioread('arctic_enc.wav');
 for i = 1:size(c1,1)
     d = 0;
     m1 = 1;
