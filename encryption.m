@@ -1,10 +1,10 @@
-[x1,fs] = audioread('arctic_a0001.wav');
-x = x1(1: 51761);
+[x1,fs] = audioread('audio_amr.amr');
+x = x1(1:size(x1,1));
 figure,plot(x);
 x2 = x.*100000;
 x2 = fix(x2);
 x2 = x2+50000;
-for i = 1:51761
+for i = 1:size(x1,1)
     de = 0;
     c = 1;
     while de~=e
